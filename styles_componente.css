@@ -1,0 +1,81 @@
+:root {
+  --frequencia: #126ae2;
+  --prova: #1e88e5;
+}
+
+/* cada cartão de aula */
+.comp-aula {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  box-sizing: border-box;
+}
+
+/* banner de PROVA (aparece se prova_alert = true) */
+.lable-prova {
+  display: block;
+  background-color: var(--prova);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight:600;
+  font-size:13px;
+}
+
+/* título e texto */
+.titulo_aula {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0 0 0;
+}
+
+/* badges (faltas e nota) */
+.lables {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.lable-frequencia {
+  background-color: var(--frequencia);
+  padding: 7px 12px;
+  border-radius: 500px;
+  color: white;
+  font-size: 13px;
+  display:inline-block;
+}
+
+/* cor da nota será controlada por classes adicionais */
+.lable-nota {
+  padding: 7px 12px;
+  border-radius: 500px;
+  color: white;
+  font-size: 13px;
+  display:inline-block;
+}
+
+.nota-baixa { background:#e74c3c; }    /* vermelho */
+.nota-media { background:#f39c12; }   /* laranja */
+.nota-alta  { background:#2ecc71; }   /* verde */
+
+.p_lable {
+  font-size: 13px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
