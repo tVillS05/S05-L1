@@ -3,7 +3,35 @@
   --prova: #1e88e5;
 }
 
-/* cada cartão de aula */
+body{
+  margin:0;
+  background:#3b3b3b;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:28px 12px;
+}
+.app{
+  width:380px;
+  max-width:96%;
+  background:#f5f8fb;
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.55);
+}
+header{ display:flex; align-items:center; justify-content:space-between; padding:6px 4px; }
+.icon{ font-size:20px; color:#1e88e5; cursor:pointer; }
+.logo{ color:#1e88e5; font-weight:700; font-size:20px; letter-spacing:0.5px; }
+
+.card { background:#fff; border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-bottom:12px; }
+.greeting h3{ margin:0 0 6px 0; }
+.small{ color:#667; font-size:13px; margin:6px 0 0 0; }
+
+.event-image{ width:100%; height:160px; object-fit:cover; border-radius:8px; display:block; }
+.event-title{ text-align:center; margin:8px 0 4px; font-weight:600; }
+.event-desc{ text-align:center; color:#666; font-size:14px; margin:0; }
+.event-footer{ display:flex; gap:10px; justify-content:center; color:#666; font-size:13px; margin-top:10px; }
+
 .comp-aula {
   background: #fff;
   border-radius: 12px;
@@ -13,7 +41,6 @@
   box-sizing: border-box;
 }
 
-/* banner de PROVA (aparece se prova_alert = true) */
 .lable-prova {
   display: block;
   background-color: var(--prova);
@@ -26,7 +53,6 @@
   font-size:13px;
 }
 
-/* título e texto */
 .titulo_aula {
   font-weight: 700;
   font-size: 15px;
@@ -42,7 +68,6 @@
   margin: 8px 0 0 0;
 }
 
-/* badges (faltas e nota) */
 .lables {
   display: flex;
   gap: 10px;
@@ -59,7 +84,6 @@
   display:inline-block;
 }
 
-/* cor da nota será controlada por classes adicionais */
 .lable-nota {
   padding: 7px 12px;
   border-radius: 500px;
@@ -68,9 +92,9 @@
   display:inline-block;
 }
 
-.nota-baixa { background:#e74c3c; }    /* vermelho */
-.nota-media { background:#f39c12; }   /* laranja */
-.nota-alta  { background:#2ecc71; }   /* verde */
+.nota-baixa { background:#e74c3c; }
+.nota-media { background:#f39c12; }
+.nota-alta  { background:#2ecc71; }
 
 .p_lable {
   font-size: 13px;
@@ -79,3 +103,30 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.open-grupos {
+  background:#1e88e5;
+  color:#fff;
+  border: none;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.root { display:flex; flex-direction:column; gap:8px; font-family: "Segoe UI", Arial, sans-serif; }
+.titulo { font-weight:700; margin:0; color:#1e88e5; font-size:16px; }
+.small { color:#666; font-size:13px; }
+.disc-list { display:flex; flex-direction:column; gap:8px; max-height:220px; overflow:auto; padding-right:6px; }
+.disc-item { background:#fff; padding:10px; border-radius:8px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.06); }
+.disc-item:hover { background:#e9f5ff; }
+.badge { background:#126ae2; color:#fff; padding:6px 10px; border-radius:999px; font-size:13px; }
+.row { display:flex; justify-content:space-between; align-items:center; }
+.btn { background:#1e88e5; color:#fff; border:none; padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:600; }
+.btn-ghost { background:#fff; color:#1e88e5; border:1px solid #1e88e5; padding:7px 10px; border-radius:8px; cursor:pointer; }
+.aluno-row { display:flex; justify-content:space-between; align-items:center; background:#fff; padding:8px; border-radius:8px; }
+.chat { background:#fff; padding:10px; border-radius:8px; min-height:120px; box-shadow:0 4px 10px rgba(0,0,0,0.04); overflow:auto; }
+.msg { margin-bottom:8px; }
+.msg-meta { font-size:11px; color:#666; }
+.msg-text { font-size:14px; }
+input[type="date"], input[type="text"], input#chat-input { padding:8px; border-radius:8px; border:1px solid #ddd; font-size:14px; }
